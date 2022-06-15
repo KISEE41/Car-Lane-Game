@@ -1,0 +1,7 @@
+#player {
+    background-image: url('../images/players/player.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 20;
+}

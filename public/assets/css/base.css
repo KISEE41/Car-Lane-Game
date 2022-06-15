@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.game-viewport {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.grass {
+    width: 25%;
+    height: 100%;
+    background-image: url("../images/grass/grass3.jpg");
+    ;
+    background-repeat: repeat;
+}
+
+.road {
+    width: 50%;
+    height: 100%;
+    background-image: url("../images/road/road.jpg");
+    background-repeat: repeat;
+    background-size: 33% 100%;
+    background-position: center;
+    position: absolute;
+    left: 25%;
+    top: 0;
+    animation: roadSlide 5s infinite linear;
+}
+
+.grass-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: roadSlide 5s infinite linear;
+}
+
+.grass-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    animation: roadSlide 5s infinite linear;
+}
+
+
+@keyframes roadSlide {
+    0% {
+        background-position: 0 -100vh;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}

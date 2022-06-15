@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="./assets/css/scoreBoard.css">
+    <link rel="stylesheet" href="./assets/css/startboard.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/player.css">
+    <link rel="stylesheet" href="./assets/css/obstacle.css">
+    <link rel="stylesheet" href="./assets/css/endboard.css">
+    <title>Car Game</title>
+</head>
+
+<body>
+    <div id="scoreBoard">
+        <h2>Highest Score: <span class="highest-score">0</span></h2>
+        <h2>Your Score: <span class="score">0</span></h2>
+    </div>
+    <div id="startBoard">
+        <h1>Don't Collide</h1>
+        <div class="arrow-container">
+            <h2>Keys Used</h2>
+            <p class="up">UP</p>
+            <p class="down">Down</p>
+            <p class="left">Left</p>
+            <p class="right">Right</p>
+            <img src="./assets/images/key.png" class="arrow-image" />
+            <div class="play-button">
+                <img src="./assets/images/play.png" class="play-btn" />
+                <p>Play</p>
+            </div>
+        </div>
+    </div>
+    <div class="game-viewport">
+        <div class="grass grass-left"></div>
+        <div class="road"></div>
+        <div class="grass grass-right"></div>
+    </div>
+    <div id="endBoard">
+        <h1>Game Over</h1>
+        <h2>Your score: <span class="score">0</span></h2>
+        <div class="play-button">
+            <img src="./assets/images/play.png" class="play-btn" />
+            <p>Retry</p>
+        </div>
+    </div>
+    </div>
+    <script src="./assets/js/start.js"></script>
+    <script src="./assets/js/score.js"></script>
+    <script src="./assets/js/reset.js"></script>
+    <script src="./assets/js/constants.js"></script>
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/player.js"></script>
+    <script src="./assets/js/obstacles.js"></script>
+    <script src="./assets/js/level.js"></script>
+</body>
+
+</html>
